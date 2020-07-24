@@ -1,0 +1,267 @@
+@font-face 
+{
+    font-family: 'caviar_dreamsregular';
+    src: url('fonts/CaviarDreams-webfont.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body
+{
+	font-family: caviar_dreamsregular;
+}
+.container
+{
+	max-width: 1000px;
+	margin: auto;
+	border: solid 1px gray;
+
+}
+p
+{
+	text-align: justify;
+}
+/*------------------------vue de la maquette en général----------------------*/
+.full-main,
+aside,
+main
+{
+	display: flex;
+}
+aside,
+.portrait 
+{
+	 width: 30%;
+	 min-width: 250px;
+     background-color: #80DEEA;
+	 flex-direction: column;
+	 justify-content: space-between;
+}
+ main
+{
+    width: 70%;
+	flex-direction: column;
+}
+ /*------------------------Header----------------------------------*/
+ header
+{
+ 	display: flex;
+}
+.portrait
+{
+    text-align: center;
+    background-color:#80DEEA;
+}
+  img
+{
+	width: 150px;
+	border-radius: 50% 50%;
+	text-align: center;
+	padding: 40px 40px;
+}
+.titre
+{
+width: 70%;
+}
+h1
+{
+	color: #546E7A;
+	font-weight: bold;
+	text-align: center;
+}
+h2
+{
+ 	color: #78909C;
+	text-align: center;
+}
+/*--------------------------Aside------------------------------*/
+.contact
+{
+     margin-bottom: 5%;
+}
+.elements-contact
+{
+	margin-left: auto;
+	padding: 5px;
+}
+.moi
+{
+    flex: 2;
+}
+ .loisirs{
+    margin-top: 5%;
+	margin-bottom: 7%;
+}
+.titre-aside
+{
+ 	border: solid 1px #546E7A;
+    background-color:#546E7A;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+}
+.elements-contact
+{
+	text-align: left;
+}
+.elements-moi
+{
+	margin: 10% 10%;
+	text-align: justify;
+}
+.icons-aside
+{
+	display: inline-block;
+	color: #546E7A;
+	font-size: 30px;
+	border: 1px solid #546E7A;
+	border-radius: 50% 50%;
+	text-align: center;
+	margin-left: 5%;
+	padding: 5%;
+	width: 40px;
+	height: 40px;
+}
+/*----------------------------------------Main--------------------------------------*/
+.icon-main
+{
+	color: #80DEEA;
+	margin-right: 10px;
+	font-size: 1.2em;
+}
+.infos p
+{
+	padding-right: 10px;
+}
+li
+{
+	margin-top: 1em;
+	margin-bottom: 1em;
+	display: flex;
+}
+.icon-point
+{
+	color: #80DEEA;
+	font-size: 1em;
+	margin-right: 10px;
+}
+.icon-dot
+{
+	color: #80DEEA;
+	font-size: 0.5em;
+	margin-right: 10px;
+}
+.date
+{
+	width: 30%;
+	margin-left: 0;
+	display: flex;
+	font-weight: bold;
+}
+.infos
+{
+	width: 70%;
+	display: block;
+	margin-left: 5%;
+}
+h4
+{
+	margin-top: 0;
+	margin-bottom: 0.5em;
+}
+h3
+{
+	text-align: center;
+	border-bottom: solid 3px #80DEEA;
+	display: block;
+	text-transform: uppercase;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+.recommandation-professionnelle
+{
+	display: flex;
+}
+.paragraphe-recommandation
+{
+	padding-right: 0;
+	text-align: justify;
+}
+.professionnel
+{
+	margin-left: 10%;
+	margin-right: 5%;
+	text-align: center;
+}
+/*-------------------------------------------Responsive--------------------------------------*/
+@media screen and (min-width: 320px) and (max-width: 650px)
+{
+	header
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	.titre
+	{
+		margin: auto;
+	}
+	
+	img
+	{
+		width: 30%;
+	}
+	aside,
+	main,
+	.portrait,
+	.container,
+	.titre
+	{
+		width: auto;
+	}
+	.portrait
+	{
+		align-items: center;
+	}
+	.full-main
+	{
+		display:flex;
+		flex-direction: column-reverse;
+	}
+	.titre-main
+	{
+		text-align: center;
+	}
+	.infos
+	{
+		text-align: center;
+		margin: auto;
+		margin-top: 5px;
+	}
+	.recommandation-professionnelle
+	{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.professionnel
+	{
+		margin-left:  5px;
+	}
+	ul
+	{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	li
+	{ 
+		flex-direction: column;
+	}
+	.icon-main
+	{
+		display: none;
+	}
+	.date,
+	.infos
+	{
+		width: 100%;
+	}
+}
