@@ -70,7 +70,7 @@ h1
 {
 	font-weight: bold;
 	text-align: left;
-	margin-left: 1.5em;
+	margin-left: 35px;
 	color: #546E7A;
 }
 span.prenom
@@ -81,17 +81,17 @@ h2
 {
  	color: #546E7A;
 	text-align: left;
-	margin-left: 1.5em;
+	margin-left: 35px;
 }
 h2::before
 {
 	content:'';
-	position: absolute;
 	height: 2px;
 	width: 50px;
 	left: 0;
 	background-color: #80DEEA;
 	bottom: 0;
+	position: relative;
 }
 /*--------------------------Aside------------------------------*/
 .contact
@@ -133,6 +133,11 @@ aside h3
 	margin: 10% 10%;
 	text-align: justify;
 }
+.icon-container
+{
+	display: flex;
+	justify-content: space-evenly;
+}
 .icons-aside
 {
 	display: inline-block;
@@ -141,8 +146,7 @@ aside h3
 	border: 1px solid #546E7A;
 	border-radius: 50% 50%;
 	text-align: center;
-	margin-left: 5%;
-	margin-top: 5%;
+	margin-top: 20px;
 	padding: 5%;
 	width: 40px;
 	height: 40px;
@@ -161,7 +165,7 @@ aside h3
 ul
 {
 	padding: 0;
-	margin-left: 1.5em;
+	margin-left: 35px;
 }
 li
 {
@@ -183,14 +187,14 @@ li
 }
 .date
 {
-	width: 30%;
+	width: 32%;
 	margin-left: 0;
 	display: flex;
 	font-weight: bold;
 }
 .infos
 {
-	width: 70%;
+	width: 68%;
 	display: block;
 	margin-left: 5%;
 }
@@ -211,8 +215,8 @@ h3
 	display: block;
 	margin-top: 0.1em;
 	margin-bottom: 0.1em;
-	margin-left: 1.5em;
-	margin-right: 1.5em;
+	margin-left: 35px;
+	margin-right: 35px;
 }
 main p
 {
