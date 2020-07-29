@@ -82,16 +82,18 @@ h2
  	color: #546E7A;
 	text-align: left;
 	margin-left: 35px;
+	position: relative;
 }
 h2::before
 {
 	content:'';
+	display: block;
 	height: 2px;
 	width: 50px;
 	left: 0;
 	background-color: #80DEEA;
 	bottom: 0;
-	position: relative;
+	position: absolute;
 }
 /*--------------------------Aside------------------------------*/
 .contact
@@ -261,6 +263,10 @@ main p
 		text-align: center;
 		margin-left: 0;
 	}
+	h2::before
+	{
+		display: none;
+	}
 	aside,
 	main,
 	.portrait,
@@ -295,6 +301,11 @@ main p
 		text-align: justify;
 		margin-right: 0;
 		padding-left: 10px;
+	}
+	.periode
+	{
+		flex-grow: 1;
+		margin-right: 30px;
 	}
 	.infos
 	{
