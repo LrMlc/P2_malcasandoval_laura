@@ -7,7 +7,7 @@
 }
 body
 {
-	font-family: caviar_dreamsregular;
+	font-family: caviar_dreamsregular ;
 }
 .container
 {
@@ -55,28 +55,53 @@ aside,
 {
 	width: 150px;
 	border-radius: 50% 50%;
+	border-color: #78909C;
+	border-style: solid;
 	text-align: center;
-	padding: 40px 40px;
+	margin-top: 10%;
+	margin-bottom: 10%;
 }
 .titre
 {
-width: 70%;
+	width: 70%;
+	margin-top: 40px;
 }
 h1
 {
-	color: #546E7A;
 	font-weight: bold;
-	text-align: center;
+	text-align: left;
+	margin-left: 1.5em;
+	color: #546E7A;
+}
+span.prenom
+{
+	color:#78909C;
 }
 h2
 {
- 	color: #78909C;
-	text-align: center;
+ 	color: #546E7A;
+	text-align: left;
+	margin-left: 1.5em;
+}
+h2::before
+{
+	content:'';
+	position: absolute;
+	height: 2px;
+	width: 50px;
+	left: 0;
+	background-color: #80DEEA;
+	bottom: 0;
 }
 /*--------------------------Aside------------------------------*/
 .contact
 {
      margin-bottom: 5%;
+}
+aside h3
+{
+	text-align: center;
+	margin: 0;
 }
 .elements-contact
 {
@@ -117,6 +142,7 @@ h2
 	border-radius: 50% 50%;
 	text-align: center;
 	margin-left: 5%;
+	margin-top: 5%;
 	padding: 5%;
 	width: 40px;
 	height: 40px;
@@ -131,6 +157,11 @@ h2
 .infos p
 {
 	padding-right: 10px;
+}
+ul
+{
+	padding: 0;
+	margin-left: 1.5em;
 }
 li
 {
@@ -163,6 +194,11 @@ li
 	display: block;
 	margin-left: 5%;
 }
+h4,
+h3
+{
+	text-transform: uppercase;
+}
 h4
 {
 	margin-top: 0;
@@ -170,12 +206,17 @@ h4
 }
 h3
 {
-	text-align: center;
+	text-align: left;
 	border-bottom: solid 3px #80DEEA;
 	display: block;
-	text-transform: uppercase;
 	margin-top: 0.1em;
 	margin-bottom: 0.1em;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+}
+main p
+{
+	margin-right: 1.5em;
 }
 .recommandation-professionnelle
 {
@@ -190,7 +231,8 @@ h3
 {
 	margin-left: 10%;
 	margin-right: 5%;
-	text-align: center;
+	margin-top: 10px;
+	text-align: left;
 }
 /*-------------------------------------------Responsive--------------------------------------*/
 @media screen and (min-width: 320px) and (max-width: 650px)
@@ -209,6 +251,12 @@ h3
 	{
 		width: 30%;
 	}
+	h1,
+	h2
+	{
+		text-align: center;
+		margin-left: 0;
+	}
 	aside,
 	main,
 	.portrait,
@@ -217,7 +265,7 @@ h3
 	{
 		width: auto;
 	}
-	.portrait
+	.portrait,
 	{
 		align-items: center;
 	}
@@ -226,13 +274,27 @@ h3
 		display:flex;
 		flex-direction: column-reverse;
 	}
-	.titre-main
+	h3,
+	ul
 	{
-		text-align: center;
+		margin-left: 0;
+		margin-right: 0;
 	}
+	.titre-main,
+	.date,
 	.infos
 	{
 		text-align: center;
+	}
+	main p
+	{
+		text-align: justify;
+		margin-right: 0;
+		padding-left: 10px;
+	}
+	.infos
+	{
+
 		margin: auto;
 		margin-top: 5px;
 	}
@@ -263,5 +325,17 @@ h3
 	.infos
 	{
 		width: 100%;
+	}
+	.date
+	{
+		margin-bottom: 10px;
+	}
+	.loisirs
+	{ 
+		text-align: center;
+	}
+	.icons-aside
+	{
+		margin-left: 0;
 	}
 }
